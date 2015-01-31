@@ -11,11 +11,11 @@
         FUTA eLearning Mobile
     </description>
 
-    <author href="http://futa.edu.ng/futaelearning/" email="aimakinde@futa.edu.ng">
+    <author href="https://github.com/akinibrahim" email="akinibrahim1@gmail.com">
         FUTA BLRG
     </author>
 
-    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <gap:config-file platform="android" parent="CFBundleShortVersionString">
         <string>1.11</string>
     </gap:config-file>
 
