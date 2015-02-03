@@ -9,7 +9,7 @@ define(templates, function (theme, loginForm, program) {
         settings: {
             name: "mootes14",
             type: "general",
-            menuURL: "#mootes14",
+            menuURL: "#FUTA_Blended",
             icon: "plugins/events/icon.png",
             lang: {
                 component: "core"
