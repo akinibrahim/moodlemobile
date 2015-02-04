@@ -88,7 +88,7 @@ version = "2.0">
     <gap:plugin name="com.phonegap.plugins.pushplugin" />
     <gap:plugin name="net.tunts.webintent" />
     <gap:plugin name="nl.x-services.plugins.launchmyapp">
-        <param name="URL_SCHEME" value="mootes14" />
+        <param name="URL_SCHEME" value="FUTA_Blended_Learning" />
     </gap:plugin>
     <gap:plugin name="com.ionic.keyboard" version="1.0.3" />
 
