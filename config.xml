@@ -2,22 +2,33 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "net.moodlemoot.mootes14"
-        versionCode = "385"
-        version   = "1.11">
-    <name>Mobile FUTA eLearning</name>
+      id = "com.moodle.moodlemobile"
+versionCode = "385"
+version = "2.0">
+    <name>FUTA Blended Learning</name>
 
     <description>
-        FUTA eLearning Mobile
+        FUTA Blended Learning Official app
     </description>
 
     <author href="http://futa.edu.ng/futaelearning/" email="aimakinde@futa.edu.ng">
-        FUTA BLRG
+        Makinde Ibrahim
     </author>
 
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-        <string>1.11</string>
+        <string>1.0</string>
     </gap:config-file>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <!-- The following phonegap camera feature block Google Play to install the app on Nexus 7.
+         Nothing is broken without it, so we disable it.
+         Note that at the current moment we don't use phonegap video capture plugin - MOBILE-296.
+         -->
+    <!-- feature name="http://api.phonegap.com/1.0/camera"/ -->
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
 
     <preference name="phonegap-version" value="3.6.3" />
     <preference name="orientation"      value="default" />
@@ -36,25 +47,13 @@
     <icon src="img/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
     <icon src="img/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
     <icon src="img/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
-    <icon src="img/icon/android/icon-144-xxhdpi.png"  gap:platform="android"    gap:density="xxhdpi" />
-
-    <icon src="img/icon/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
-    <icon src="img/icon/ios/icon-small@2x.png" gap:platform="ios" width="58" height="58" />
-    <icon src="img/icon/ios/icon-small@3x.png" gap:platform="ios" width="87" height="87" />
-
-    <icon src="img/icon/ios/icon-40.png"            gap:platform="ios"      width="40" height="40" />
-    <icon src="img/icon/ios/icon-40@2x.png"         gap:platform="ios"      width="80" height="80" />
-    <icon src="img/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
-    <icon src="img/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
-    <icon src="img/icon/ios/icon-60@3x.png" gap:platform="ios" width="180" height="180" />
-
     <icon src="img/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="img/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
     <icon src="img/icon/ios/icon-76.png"            gap:platform="ios"        width="76" height="76" />
-    <icon src="img/icon/ios/icon-40@3x.png"         gap:platform="ios"        width="120" height="120" />
-    <icon src="img/icon/ios/icon-76@2x.png"         gap:platform="ios"        width="152" height="152" />
-    <icon src="img/icon/ios/icon-57@2x.png"         gap:platform="ios"        width="114" height="114" />
-    <icon src="img/icon/ios/icon-72@2x.png"         gap:platform="ios"        width="144" height="144" />
+    <icon src="img/icon/ios/icon-120.png"           gap:platform="ios"        width="120" height="120" />
+    <icon src="img/icon/ios/icon-152.png"           gap:platform="ios"        width="152" height="152" />
+    <icon src="img/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="img/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
 
     <gap:splash src="img/splash/android/android_ldpi_portrait.png.png" gap:platform="android" gap:density="ldpi"/>
     <gap:splash src="img/splash/android/android_mdpi_portrait.png" gap:platform="android" gap:density="mdpi"/>
@@ -76,7 +75,8 @@
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.console" />
-    <gap:plugin name="org.apache.cordova.device" version="0.2.8"/>
+    <gap:plugin name="org.apache.cordova.contacts" />
+    <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.file" />
     <gap:plugin name="org.apache.cordova.file-transfer" />
     <gap:plugin name="org.apache.cordova.globalization" />
@@ -91,22 +91,6 @@
         <param name="URL_SCHEME" value="mootes14" />
     </gap:plugin>
     <gap:plugin name="com.ionic.keyboard" version="1.0.3" />
-    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.7.5" />
-
-    <gap:config-file platform="android" parent="/manifest">
-         <application android:debuggable="false" />
-    </gap:config-file>
-
-    <!-- See MOBILE-892 -->
-    <preference name="permissions" value="none"/>
-
-    <gap:config-file platform="android" parent="/manifest" mode="delete">
-        <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-        <uses-permission android:name="android.permission.READ_CONTACTS" />
-        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-        <uses-permission android:name="android.permission.VIBRATE"/>
-    </gap:config-file>
-
 
     <access origin="*" />
 
