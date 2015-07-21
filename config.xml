@@ -4,7 +4,7 @@
         xmlns:android = "http://schemas.android.com/apk/res/android"
         
       id = "ng.futminna.elearning"
-versionCode = "01"
+versionCode = "1043"
 version = "1.0">
     <name>FUTMINNA eLearning</name>
 
