@@ -7,9 +7,9 @@ var templates = [
 define(templates, function (theme, loginForm, program) {
     var plugin = {
         settings: {
-            name: "FUTA_Blended_Learning",
+            name: "FUTMINNA",
             type: "general",
-            menuURL: "#FUTA_Blended_Learning",
+            menuURL: "#FUTMINNA",
             icon: "plugins/events/icon.png",
             lang: {
                 component: "core"
@@ -17,13 +17,13 @@ define(templates, function (theme, loginForm, program) {
         },
 
         routes: [
-            ["FUTA_Blended_Learning", "show_program", "showProgram"]
+            ["FUTMINNA", "show_program", "showProgram"]
         ],
 
         showProgram: function() {
             var tpl = {};
             var html = MM.tpl.render(program, tpl);
-            MM.panels.show('center', html, {title: MM.lang.s("FUTA_Blended_Learning")});
+            MM.panels.show('center', html, {title: MM.lang.s("FUTMINNA")});
         }
     };
 
