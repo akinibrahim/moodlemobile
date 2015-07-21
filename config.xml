@@ -3,16 +3,16 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         
-      id = "ng.futa.futaelearning"
-versionCode = "385"
-version = "2.0">
-    <name>FUTA Blended Learning</name>
+      id = "ng.futminna.elearning"
+versionCode = "01"
+version = "1.0">
+    <name>FUTMINNA eLearning</name>
 
     <description>
-        FUTA Blended Learning Official app
+        FUTMINNA eLearning Official app
     </description>
 
-    <author href="http://futa.edu.ng/futaelearning/" email="aimakinde@futa.edu.ng">
+    <author href="http://futminna.ecoursework.com.ng/" email="akinibrahim1@gmail.com">
         Makinde Ibrahim
     </author>
 
@@ -31,7 +31,7 @@ version = "2.0">
     <feature name="http://api.phonegap.com/1.0/media"/>
     <feature name="http://api.phonegap.com/1.0/file"/>
 
-    <preference name="phonegap-version" value="3.6.3" />
+    <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
@@ -89,7 +89,7 @@ version = "2.0">
     <gap:plugin name="com.phonegap.plugins.pushplugin" />
     <gap:plugin name="net.tunts.webintent" />
     <gap:plugin name="nl.x-services.plugins.launchmyapp">
-        <param name="URL_SCHEME" value="FUTA_Blended_Learning" />
+        <param name="URL_SCHEME" value="FUTMINNA ELEARNING" />
     </gap:plugin>
     <gap:plugin name="com.ionic.keyboard" version="1.0.3" />
 
